@@ -1,0 +1,64 @@
+﻿@using SehirOtomasyonuMvc.Models.ViewModel
+@model Bolge
+
+@{
+    ViewBag.Title = "Bölge Ekleme İşlemi";
+}
+
+
+<h2>Bölge Ekleme</h2>
+<div>
+
+
+    Mvc Html Helpers: Methodlardır.
+    Server Side Validation
+    Client Side Validation
+
+    
+    <div class="form-group">
+        @Html.LabelFor(b => b.BolgeAd)
+        @Html.TextBoxFor(b => b.BolgeAd, new { @class = "form-control" })
+        @Html.ValidationMessageFor(b => b.BolgeAd)
+        <label id="lblBolgeAdHata" style="display:none;color:red">Client Side Hata - BolgeAd</label>
+    </div>
+    
+
+
+    <input type="submit" name="btnKaydet" value="Kaydet" class="btn btn-success" onclick="BolgeEkle()" />
+    @*}*@
+
+
+</div>
+@section scripts{
+    <script>
+        function BoslukKontrol() {
+            var hatayok = true;
+            if ($("#BolgeAd").val() ==  "") {
+                $("#lblBolgeAdHata").show();
+                hatayok = false;               
+            }
+            return hatayok;
+        }
+
+        function BolgeEkle() {
+            
+            $.ajax({
+                url: "/Bolge/Ekle",
+                method: "Post",
+                data: {
+                    BolgeAd: $("#BolgeAd").val(),
+                  
+                },
+                success: function (data) {
+                    
+                    if (data == "True") {
+                        alert("İşlem başarılı");
+                    } else {
+                        alert("Ekleme işleminde hata");
+                    }
+                }
+                //error
+            });
+        }
+    </script>
+}

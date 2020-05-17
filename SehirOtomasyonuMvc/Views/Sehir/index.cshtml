@@ -77,14 +77,14 @@
             return hatayok;
         }
 
-        function OSehirEkle() {
+        function SehirEkle() {
             //yukardaki if else i al else aşağısı
             $.ajax({
                 url: "/Sehir/Ekle",
                 method: "Post",
                 data: {
-                    Ad: $("#Shr_SehirAd").val(),
-                    Soyad: $("#Shr_TarihiEser").val()
+                    SehirAd: $("#Shr_SehirAd").val(),
+                    TarihiEser: $("#Shr_TarihiEser").val()
                 },
                 success: function (data) {
                     //alert("şehir Ekleme Başarılı");

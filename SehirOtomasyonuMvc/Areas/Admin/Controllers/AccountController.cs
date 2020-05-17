@@ -10,39 +10,40 @@ namespace SehirOtomasyonuMvc.Areas.Admin.Controllers
 {
     public class AccountController : Controller
     {
-        /*SqlConnection con = new SqlConnection();
+        SqlConnection con = new SqlConnection();
         SqlCommand com = new SqlCommand();
-        SqlDataAdapter dr;*/
+        SqlDataReader dr;
         [HttpGet]
         // GET: Admin/Account
         public ActionResult Login()
         {
             return View();
         }
-        /*void connectionString()
+        void connectionString()
         {
-            con.ConnectionString = "data source =SQLEXPRESS; database=SehirOtomasyonDbMvc; integrated security=SSPI;";
+            con.ConnectionString = "data source =./SQLEXPRESS; database=SehirOtomasyonDbMvc; Integrated Security=true;";
         }
-        public ActionResult Verify(Acount acc)
+        [HttpPost]
+        public ActionResult Verify(Account acc)
         {
             connectionString();
             con.Open();
             com.Connection = con;
-            com.CommandText = "";
+            com.CommandText = "select * from tbl_admin where username" + acc.Name + "and password=" + acc.Password + "'";
             com.ExecuteReader();
             if (dr.Read())
             {
+
                 con.Close();
+                return View("Create");
             }
             else
             {
                 con.Close();
+                return View("Error");
             }
 
 
-          
-        }*/
-       
-            
+        }
     }
 }

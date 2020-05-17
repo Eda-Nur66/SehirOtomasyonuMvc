@@ -96,5 +96,12 @@ namespace SehirOtomasyonuMvc.Controllers
 
             }
         }
+        public ActionResult CkEditor()
+        {
+            return View();
+        }
+
+   
+
     }
 }

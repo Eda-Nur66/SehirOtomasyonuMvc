@@ -1,0 +1,80 @@
+﻿body {
+    background-color: #e5e5e5;
+    color: #404040;
+    font-family: 'Trebuchet MS';
+}
+
+.box-shadow {
+    -moz-box-shadow: 0px 1px 3px #bbb;
+    -webkit-box-shadow: 0px 1px 3px #bbb;
+    box-shadow: 0px 1px 3px #bbb; /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#BBBBBB')"; /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#BBBBBB');
+}
+
+
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 260px;
+    top: 50%;
+    height: 265px;
+    margin-top: 120px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.tblKullaniciGirisi {
+    float: left;
+}
+
+    .tblKullaniciGirisi td {
+        line-height: 30px;
+    }
+
+.itext {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+input[type=text] {
+    width: 234px;
+    height: 23px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+input[type=password] {
+    width: 234px;
+    height: 23px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+input[type=submit] {
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 7px 19px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #f66;
+}
+
+    input[type=submit]:hover {
+        background-color: #f44;
+    }
+
+#lblGirisDurum {
+    float: left;
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    border: 0;
+    color: #404040;
+    font-weight: 700;
+}

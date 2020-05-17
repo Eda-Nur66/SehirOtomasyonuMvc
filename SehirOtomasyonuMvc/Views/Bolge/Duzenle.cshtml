@@ -1,0 +1,19 @@
+﻿
+@model SehirOtomasyonuMvc.Models.ViewModel.Bolge
+@{
+    ViewBag.Title = "Duzenle";
+}
+
+<h2>Bolge Bilgileri Düzenleme İşlemi</h2>
+
+@using (Html.BeginForm("Duzenle", "Bolge", FormMethod.Post))
+{
+    @Html.HiddenFor(b => b.BolgeId)
+    <div class="form-group">
+        @Html.LabelFor(b => b.BolgeAd)
+        @Html.TextBoxFor(b => b.BolgeAd, new { @class = "form-control" })
+    </div>
+    
+
+    <input type="submit" name="btnKaydet" value="Kaydet" class="btn btn-success" />
+}

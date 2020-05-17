@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CkEditor</title>
+    
+    
+</head>
+<body>
+    <script src="~/Scripts/ckeditor/ckeditor.js"></script>>
+
+
+        <div class="row">
+            <div>
+                @Html.TextArea("DocumentText","Eda Nur Aksungur", new { id="ckeditör"})
+            </div>
+            <script type="text/javascript">
+                CKEDITOR.replace('ckeditor');
+                CkFinder.setupCKEditor(null, '/Scripts/ckfinder');
+
+            </script>
+    
+    </div>
+</body>
+</html>

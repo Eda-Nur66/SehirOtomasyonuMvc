@@ -17,5 +17,7 @@ namespace SehirOtomasyonuMvc.Models
         [Display(Name = "Sehir Tarihi eser")]
         [Required(ErrorMessage = "Sehir Tarihi eser Giriniz", AllowEmptyStrings = false)] //Gerekli
         public string TarihiEser { get; set; }
+
+       
     }
 }
