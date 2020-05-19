@@ -19,31 +19,30 @@ namespace SehirOtomasyonuMvc.Areas.Admin.Controllers
         {
             return View();
         }
-        void connectionString()
-        {
-            con.ConnectionString = "data source =./SQLEXPRESS; database=SehirOtomasyonDbMvc; Integrated Security=true;";
-        }
-        [HttpPost]
-        public ActionResult Verify(Account acc)
-        {
-            connectionString();
-            con.Open();
-            com.Connection = con;
-            com.CommandText = "select * from tbl_admin where username" + acc.Name + "and password=" + acc.Password + "'";
-            com.ExecuteReader();
-            if (dr.Read())
-            {
+        //void connectionString()
+        //{
+        //    con.ConnectionString = "data source =./SQLEXPRESS; database=SehirOtomasyonDbMvc; Integrated Security=true;";
+        //}
+        //[HttpPost]
+        //public ActionResult Verify(Account acc)
+        //{
+        //    connectionString();
+        //    con.Open();
+        //    com.Connection = con;
+        //    com.CommandText = "select * from tbl_admin where username" + acc.Name + "and password=" + acc.Password + "'";
+        //    com.ExecuteReader();
+        //    if (dr.Read())
+        //    {
 
-                con.Close();
-                return View("Create");
-            }
-            else
-            {
-                con.Close();
-                return View("Error");
-            }
+        //        con.Close();
+        //        return View("Create");
+        //    }
+        //    else
+        //    {
+        //        con.Close();
+        //        return View("Error");
+        //    }
 
 
         }
     }
-}

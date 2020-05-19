@@ -110,9 +110,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default.aspx" />
-    <Content Include="giris.aspx" />
-    <Content Include="style.css" />
     <Content Include="Content\Admin\css\sb-admin-2.css" />
     <Content Include="Content\Admin\css\sb-admin-2.min.css" />
     <Content Include="Content\Admin\img\undraw_posting_photo.svg" />
@@ -1723,7 +1720,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="images\bg.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
@@ -2060,11 +2056,6 @@
     <Content Include="Scripts\ckeditor\styles.js" />
     <Content Include="Scripts\ckeditor\vendor\promise.js" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
-    <Content Include="font\fontawesome-webfont.eot" />
-    <Content Include="font\fontawesome-webfont.ttf" />
-    <Content Include="font\fontawesome-webfont.woff" />
-    <Content Include="font\fontawesome-webfont.woff2" />
-    <Content Include="font\FontAwesome.otf" />
     <Content Include="Areas\Admin\Views\Account\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Account\Login.cshtml" />
     <Content Include="Areas\Admin\Views\Account\Error.cshtml" />
@@ -2077,10 +2068,6 @@
     <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
     <Content Include="Scripts\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="Scripts\ckeditor\skins\moono-lisa\readme.md" />
-    <Content Include="Aspnet_Session\Web.config" />
-    <None Include="Aspnet_Session\Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2099,14 +2086,6 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
     <Compile Include="Areas\Admin\Views\HomeController.cs" />
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="giris.aspx.cs">
-      <DependentUpon>giris.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Controllers\BolgeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SehirController.cs" />
